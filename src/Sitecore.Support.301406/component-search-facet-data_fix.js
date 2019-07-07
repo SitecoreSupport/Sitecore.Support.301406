@@ -79,7 +79,7 @@ XA.component.search.facet.data = (function ($, document) {
                                 callback: function (data) {
                                     XA.component.search.vent.trigger("facet-data-partial-filtered", data);
                                 },
-                                url: XA.component.search.url.createMultiFacetUrl(requestData, [facetName], signature)
+                                url: XA.component.search.url.createMultiFacetUrl(requestData, [facetName], signature, itemid)
                             });
                         });
                     }
